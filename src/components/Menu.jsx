@@ -1,0 +1,53 @@
+import '../styles/Menu.scss';
+import { Link, NavLink,useLocation } from 'react-router-dom';
+import logo1 from '../assets/sg.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faUser, faEnvelope, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+
+export default function Menu(){
+    const location = useLocation();
+
+    return(
+        <div className='nav-bar'>
+            <Link className='logo' to="/">
+                <img src={logo1} alt="logo site" />
+                <h2>Sébastien Gau</h2>
+            </Link>
+            <nav>
+                <NavLink exact="true" activeclassname="active" to="/">
+                    <FontAwesomeIcon icon={faHome} style={{ 
+              color: location.pathname === "/" ? "#FF00FF" : "#4d4d4e"
+            }} />
+                </NavLink>
+                <NavLink exact="true" activeclassname="active" className="about-link" to="/presentation">
+                    <FontAwesomeIcon icon={faUser} style={{ 
+              color: location.pathname === "/presentation" ? "#FF00FF" : "#4d4d4e"
+            }} />
+                </NavLink>
+                <NavLink exact="true" activeclassname="active" className="works-link" to="/portfolio">
+                    <FontAwesomeIcon icon={faBriefcase} style={{ 
+              color: location.pathname === "/portfolio" ? "#FF00FF" : "#4d4d4e"
+            }} />
+                </NavLink>
+                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+                    <FontAwesomeIcon icon={faEnvelope} style={{ 
+              color: location.pathname === "/contact" ? "#FF00FF" : "#4d4d4e"
+            }} />
+                </NavLink>
+            </nav>
+            <ul>
+                <li>
+                    <a href="https://github.com/Msgau" rel="noopener noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faGithub}/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/s%C3%A9bastien-gau-3266b768/" rel="noopener noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    )
+}

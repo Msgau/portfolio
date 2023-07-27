@@ -1,0 +1,22 @@
+.presentationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.presentationContainer strong, .presentationContainer h2, .presentationContainer a {
+    color: #FF00FF;
+    font-weight: 400;
+}
+
+.presentationContainer a {
+    text-decoration: underline;
+}
+.presentationContainer a:hover {
+    color: white;
+    text-decoration: none;
+}

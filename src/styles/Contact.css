@@ -1,0 +1,50 @@
+.contact form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+.contact label {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.nameEmail {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+}
+
+.contact__name, .contact__email {
+    width: 240px;
+    height: 35px;
+}
+
+.contact textarea, .contact input[type="text"], .contact input[type="email"] {
+    background-color: #115173;
+    border: 0;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.contact textarea {
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.sendButton {
+    width: 100px;
+    margin: auto;
+    height: 30px;
+    background-color: #151B54;
+    border: 2px solid #FF00FF;
+    color: #FF00FF;
+    border-radius: 3px;
+}
