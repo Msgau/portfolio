@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import RouteConfiguration from './pages/Routent';
 
 function App() {

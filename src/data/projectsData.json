@@ -1,0 +1,44 @@
+[
+	{
+		"id": "1",
+		"title": "Ciné Crew (WOP)",
+		"mission": "Projet personnel initié en parallèlle de ma formation. Il est encore en cours de développement. Mon objectif est de créer entièrement un site de notation de films incluant des fonctions sociales. Actuellement, j'ai intégré un moteur de recherche ainsi qu'un interface d'affichage pour les films. Je suis en train de me former sur le langage SQL pour développer le backend du site, nécessaire à l'intégration des fonctions sociales.",
+        "technologies": [
+			"REACT",
+			"CSS",
+			"SQL",
+			"API_TMDB"
+		]
+	},
+    {
+		"id": "2",
+		"title": "Frontend du site KASA",
+		"mission": "Créer l'interace visuelle d'un site de réservation de logements chez l'habitant",
+        "technologies": [
+			"REACT",
+			"CSS"
+		]
+	},
+    {
+		"id": "3",
+		"title": "Backend du site Mon Vieux Grimoire",
+		"mission": "Construire le backend du site Mon Vieux Grimoire, un site de notation de livres",
+        "technologies": [
+			"NodeJs",
+			"Express",
+			"MongoDB",
+			"JsonWebToken"
+		]
+	},
+    {
+		"id": "4",
+		"title": "Optimisation et référencement du site Nina Carducci",
+		"mission": "Améliorer, le référencement et le performances du site, débugger les outils qui ne fonctionnent pas, supprimer les bibliothèques et les remplacer par du code JavaScript.",
+        "technologies": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Lighthouse"
+		]
+	}
+]

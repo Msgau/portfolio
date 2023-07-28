@@ -1,5 +1,6 @@
 import '../styles/Presentation.css';
 import Menu from '../components/Menu';
+import Loader from 'react-loaders';
 
 export default function Presentation() {
     return (
@@ -13,6 +14,7 @@ export default function Presentation() {
         <p>Mes connaissances avancées en développement front-end (<strong>JavaScript</strong>, <strong>HTML5</strong> et <strong>CSS3</strong>) et back-end (<strong>Node.js</strong>, <strong>express</strong>, <strong>mongoDB</strong>) me permettent de créer des expériences web innovantes et fluides. </p>
         <p>Vous pouvez retrouver davantage d'informations sur ma page <a href="https://www.linkedin.com/in/s%C3%A9bastien-gau-3266b768/" rel="noopener noreferrer" target="_blank">Linkedin.</a></p>
         </div>
+        <Loader type="pacman" />
         </>
     )
 }
