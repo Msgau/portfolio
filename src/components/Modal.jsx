@@ -141,7 +141,7 @@ const Modal = ({ show, onClose, imageSrc, imageSrc2, imageAlt, imageAlt2, projec
         height="80"
         width="80"
         ariaLabel="blocks-loading"
-        wrapperStyle={{color: "#FF00FF"}}
+        wrapperStyle={{"background-color": "#FF00FF"}}
         wrapperClass="blocks-wrapper"
       />
       </div>

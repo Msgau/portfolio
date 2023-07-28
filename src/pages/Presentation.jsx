@@ -6,6 +6,7 @@ export default function Presentation() {
     return (
         <>
         <Menu />
+        <div className="backgroundImage"></div>
         <div className='presentationContainer'>
         <h2>Présentation</h2>
         <p>Actuellement <strong>développeur web junior</strong> passionné par les nouvelles technologies, je suis animé par une soif d'apprendre et de relever de nouveaux défis. 

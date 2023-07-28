@@ -20,8 +20,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    filter: brightness(0.8);
-    /* z-index: -1; */
+    filter: brightness(0.3);
+    z-index: -1;
+}
+
+.home .backgroundImage {
+    filter: brightness(0.9);
 }
 
 .homeContainer {

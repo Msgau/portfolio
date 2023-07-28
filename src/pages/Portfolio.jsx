@@ -36,6 +36,7 @@ export default function Portfolio() {
   return (
     <div className="works">
       <Menu />
+      <div className="backgroundImage"></div>
       <div className="portfolio">
         <div className="block" onClick={() => openModal(CineCrew, CineCrew2, projectData[0])}>
           <img

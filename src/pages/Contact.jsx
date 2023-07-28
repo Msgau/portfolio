@@ -36,6 +36,7 @@ export default function ContactForm() {
   return (
     <>
     <Menu />
+    <div className="backgroundImage"></div>
     <div className="contact">
       <h3>Contactez-moi par e-mail</h3>
       <form onSubmit={handleSubmit}>

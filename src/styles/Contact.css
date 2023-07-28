@@ -34,7 +34,7 @@
 }
 
 .contact textarea, .contact input[type="text"], .contact input[type="email"] {
-    background-color: #115173;
+    background-color: #4d4d4e;
     border: 0;
     border-radius: 3px;
     padding-left: 10px;
@@ -42,16 +42,17 @@
 }
 
 .contact textarea {
-    height: 30vh;
+    height: 25vh;
     margin-bottom: 15px;
 }
 
 .sendButton {
-    width: 100px;
+    width: 120px;
     margin: auto;
-    height: 30px;
-    background-color: #151B54;
-    border: 2px solid #FF00FF;
-    color: #FF00FF;
+    height: 35px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
     border-radius: 3px;
 }
