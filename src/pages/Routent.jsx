@@ -13,12 +13,12 @@ function RouteConfiguration() {
       
         <Router>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path='/presentation' element={< Presentation/>} />
+            <Route path="/portfolio/" element={<Home />} />
+            <Route path="/portfolio/home" element={<Home />} />
+            <Route path='/portfolio/presentation' element={< Presentation/>} />
             <Route path="/*" element={<Error404 />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/portfolio/works" element={<Portfolio />} />
+            <Route path="/portfolio/contact" element={<Contact />} />
           </Routes>
         </Router>
   

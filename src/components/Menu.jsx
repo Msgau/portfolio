@@ -17,22 +17,22 @@ export default function Menu(){
             <nav>
                 <NavLink exact="true" activeclassname="active" to="/portfolio/">
                     <FontAwesomeIcon icon={faHome} style={{ 
-              color: location.pathname === "/" ? "#FF00FF" : "#4d4d4e"
+              color: location.pathname === "/portfolio/" ? "#FF00FF" : "#4d4d4e"
             }} />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="about-link" to="/presentation">
+                <NavLink exact="true" activeclassname="active" className="about-link" to="/portfolio/presentation">
                     <FontAwesomeIcon icon={faUser} style={{ 
-              color: location.pathname === "/presentation" ? "#FF00FF" : "#4d4d4e"
+              color: location.pathname === "/portfolio/presentation" ? "#FF00FF" : "#4d4d4e"
             }} />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="works-link" to="/portfolio">
+                <NavLink exact="true" activeclassname="active" className="works-link" to="/portfolio/works">
                     <FontAwesomeIcon icon={faBriefcase} style={{ 
-              color: location.pathname === "/portfolio" ? "#FF00FF" : "#4d4d4e"
+              color: location.pathname === "/portfolio/works" ? "#FF00FF" : "#4d4d4e"
             }} />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+                <NavLink exact="true" activeclassname="active" className="contact-link" to="/portfolio/contact">
                     <FontAwesomeIcon icon={faEnvelope} style={{ 
-              color: location.pathname === "/contact" ? "#FF00FF" : "#4d4d4e"
+              color: location.pathname === "/portfolio/contact" ? "#FF00FF" : "#4d4d4e"
             }} />
                 </NavLink>
             </nav>
