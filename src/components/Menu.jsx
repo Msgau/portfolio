@@ -10,12 +10,12 @@ export default function Menu(){
 
     return(
         <div className='nav-bar'>
-            <Link className='logo' to="/">
+            <Link className='logo' to="/portfolio/">
                 <img src={logo1} alt="logo site" />
                 <h2>Sébastien Gau</h2>
             </Link>
             <nav>
-                <NavLink exact="true" activeclassname="active" to="/">
+                <NavLink exact="true" activeclassname="active" to="/portfolio/">
                     <FontAwesomeIcon icon={faHome} style={{ 
               color: location.pathname === "/" ? "#FF00FF" : "#4d4d4e"
             }} />

@@ -15,7 +15,7 @@ function RouteConfiguration() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path='/Presentation' element={< Presentation/>} />
+            <Route path='/presentation' element={< Presentation/>} />
             <Route path="/*" element={<Error404 />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
