@@ -4,7 +4,7 @@ import Loader from 'react-loaders';
 
 export default function Presentation() {
     return (
-        <>
+        <div className='presentationPage'>
         <Menu />
         <div className="backgroundImage"></div>
         <div className='presentationContainer'>
@@ -16,6 +16,6 @@ export default function Presentation() {
         <p>Vous pouvez retrouver davantage d'informations sur ma page <a href="https://www.linkedin.com/in/s%C3%A9bastien-gau-3266b768/" rel="noopener noreferrer" target="_blank">Linkedin.</a></p>
         </div>
         <Loader type="pacman" />
-        </>
+        </div>
     )
 }

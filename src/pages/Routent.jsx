@@ -4,6 +4,7 @@ import Error404 from './Error404';
 import Presentation from './Presentation';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import '../styles/Routes.css';
 
 function RouteConfiguration() {
 

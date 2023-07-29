@@ -34,7 +34,7 @@ export default function ContactForm() {
     };
 
   return (
-    <>
+    <div className="contactPage">
     <Menu />
     <div className="backgroundImage"></div>
     <div className="contact">
@@ -85,6 +85,6 @@ export default function ContactForm() {
         {isSent && <div>Message envoyé avec succès!</div>}
       </form>
     </div>
-    </>
+    </div>
   );
 }

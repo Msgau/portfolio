@@ -38,12 +38,12 @@ export default function Menu(){
             </nav>
             <ul>
                 <li>
-                    <a href="https://github.com/Msgau" rel="noopener noreferrer" target="_blank">
+                    <a href="https://github.com/Msgau" rel="noopener noreferrer" target="_blank" className='external__link'>
                     <FontAwesomeIcon icon={faGithub}/>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/s%C3%A9bastien-gau-3266b768/" rel="noopener noreferrer" target="_blank">
+                    <a href="https://www.linkedin.com/in/s%C3%A9bastien-gau-3266b768/" rel="noopener noreferrer" target="_blank" className='external__link'>
                     <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                 </li>

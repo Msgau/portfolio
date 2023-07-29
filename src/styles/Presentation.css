@@ -1,3 +1,7 @@
+.presentationPage {
+    display: flex;
+}
+
 .presentationContainer {
     display: flex;
     flex-direction: column;
@@ -19,4 +23,10 @@
 .presentationContainer a:hover {
     color: white;
     text-decoration: none;
+}
+
+@media all and (max-width: 430px) {
+    .presentationPage {
+        display: block;
+    }
 }

@@ -1,13 +1,7 @@
-body {
-    margin: 0;
-    padding: 0;
-    overflow-y: scroll;
-    /* Permet de faire défiler le contenu si la page est plus grande que l'écran */
-}
-
 .home {
     position: relative;
     height: 100vh;
+    display: flex;
 }
 
 .backgroundImage {
@@ -16,7 +10,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background : url('../assets/homeBackground.jpg');
+    background: url('../assets/homeBackground.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -35,14 +29,14 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    /* z-index: 1; */
 }
 
 .homeContainerText {
-    margin: 25vh auto 0 auto;
+    margin: 25vh 20px 0 20px;
 }
 
-.ilADitBonjour, .homeContainerDiv {
+.ilADitBonjour,
+.homeContainerDiv {
     font-size: 25px;
     font-weight: 200;
     margin-top: 5px;
@@ -53,16 +47,54 @@ body {
     display: flex;
     justify-content: center;
 }
-.goNext {
-    width: 30px;
-    margin-bottom: 25px;
-    transition: width 0.3s ease;
-    /* Définit la transition pour la propriété "width" avec une durée de 0.3s et une courbe d'accélération (ease). Vous pouvez ajuster la durée en fonction de la vitesse souhaitée de l'animation. */
+
+@media all and (max-width: 1030px) {
+
+    .ilADitBonjour,
+    .homeContainerDiv {
+        font-size: 20px;
+    }
+    .home h1 {
+        font-size: 2.5em;
+    }
+}
+@media all and (max-width: 830px) {
+
+    .ilADitBonjour,
+    .homeContainerDiv {
+        font-size: 18px;
+    }
+    .home h1 {
+        font-size: 2em;
+    }
+    .homeContainerText {
+        margin-top: 20vh;
+    }
 }
 
-.goNext:hover {
-    width: 40px;
+@media all and (max-width: 680px) {
+    .home h1 {
+        font-size: 2.3em;
+    }
+    .homeContainerText {
+        margin: 20vh 10px 0 10px;
+    }
 }
-
-
+@media all and (max-width: 530px) {
+    .home h1 {
+        font-size: 1.8em;
+    }
+}
+@media all and (max-width: 430px) {
+    .home h1 {
+        font-size: 1.6em;
+    }
+    .ilADitBonjour,
+    .homeContainerDiv {
+        font-size: 16px;
+    }
+    .home {
+        flex-direction: column-reverse;
+    }
+}
 

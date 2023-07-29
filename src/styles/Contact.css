@@ -1,3 +1,8 @@
+.contactPage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .contact form {
     display: flex;
     flex-direction: column;
@@ -10,6 +15,7 @@
     flex-direction: column;
     text-align: left;
     align-items: center;
+    width: 100%;
 }
 .contact label {
     display: flex;
@@ -55,4 +61,20 @@
     border: 2px solid white;
     color: white;
     border-radius: 3px;
+}
+
+@media all and (max-width: 430px) {
+    .nameEmail {
+        flex-direction: column;
+    }
+    .nameEmail label {
+        width: 100%;
+    }
+    .contact textarea, .contact input[type="text"], .contact input[type="email"] {
+        font-size: 12px;
+
+    }
+    .contact__name, .contact__email {
+        height: 40px;
+    }
 }
