@@ -38,7 +38,7 @@ export default function ContactForm() {
     <Menu />
     <div className="backgroundImage"></div>
     <div className="contact">
-      <h3>Contactez-moi par e-mail</h3>
+      <h3>Contactez-moi</h3>
       <form onSubmit={handleSubmit}>
         <div className="nameEmail">
         <label htmlFor="from_name">

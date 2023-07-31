@@ -1,8 +1,9 @@
 .modal-overlay {
     position: fixed;
     top: 0;
-    left: 35px;
-    width: 100%;
+    left: 70px;
+    overflow: hidden;
+    width: calc(100% - 70px);
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
@@ -14,12 +15,13 @@
     position: relative;
     background-color: white;
     border-radius: 10px;
-    margin: auto;
+    margin: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 91%;
+    width: 95%;
     height: 95%;
     display: flex;
     color: black;
+    overflow: auto;
 }
 
 .modal-div {
@@ -57,11 +59,17 @@
 }
 
 .modal-div.two img {
-    height: 80px;
+    height: 50px;
     object-fit: cover;
     margin: auto 10px;
 }
 
+.modal-div.two p {
+    font-size: 1.1em;
+}
+.modal-div.two ul {
+    margin-bottom: 20px;
+}
 .close-btn {
     position: absolute;
     top: 5px;
@@ -74,4 +82,34 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
+}
+
+
+@media all and (max-width: 430px) {
+    .modal-overlay {
+        left: 0px;
+        width: 100%;
+    }
+    .modal {
+        flex-direction: column;
+        height: 85vh;
+        justify-content: flex-start;
+    }
+    .modal-div {
+        width: 100%;
+        flex-direction: column;
+    }
+    .modal-div.one {
+        margin: 30px 0 0 0;
+    }
+    .modal-div.one img {
+        margin-bottom: 10px;
+        height: auto;
+    }
+    .modal-div.two h3, .modal-div.two p {
+        margin: 0 0 15px 10px;
+    }
+    .modal-div.two h2 {
+        margin: auto;
+    }
 }
