@@ -1,21 +1,30 @@
 import "../styles/Modal.scss";
-import { Blocks } from  'react-loader-spinner'
+import { Blocks } from "react-loader-spinner";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
-import reactLogo from '../assets/logos/logoREACT.png';
-import htmlLogo from '../assets/logos/logoHTML.png';
-import cssLogo from '../assets/logos/logoCSS.png';
-import jsLogo from '../assets/logos/logoJAVASCRIPT.png';
-import exLogo from '../assets/logos/logoExpress.png';
-import mongodbLogo from '../assets/logos/logoMongo.png';
-import lightLogo from '../assets/logos/logoLighthouse.png';
-import jwtLogo from '../assets/logos/logoJWT.png';
-import logoNode from '../assets/logos/logoNodeJs.png';
-import tmdbLogo from '../assets/logos/logoTMDB.png';
-import sqlLogo from '../assets/logos/logoSQL.png';
+import reactLogo from "../assets/logos/logoREACT.png";
+import htmlLogo from "../assets/logos/logoHTML.png";
+import cssLogo from "../assets/logos/logoCSS.png";
+import jsLogo from "../assets/logos/logoJAVASCRIPT.png";
+import exLogo from "../assets/logos/logoExpress.png";
+import mongodbLogo from "../assets/logos/logoMongo.png";
+import lightLogo from "../assets/logos/logoLighthouse.png";
+import jwtLogo from "../assets/logos/logoJWT.png";
+import logoNode from "../assets/logos/logoNodeJs.png";
+import tmdbLogo from "../assets/logos/logoTMDB.png";
+import sqlLogo from "../assets/logos/logoSQL.png";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Modal = ({ show, onClose, imageSrc, imageSrc2, imageAlt, imageAlt2, projectData }) => {
+const Modal = ({
+  show,
+  onClose,
+  imageSrc,
+  imageSrc2,
+  imageAlt,
+  imageAlt2,
+  projectData,
+}) => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [showContent, setShowContent] = useState(false);
 
@@ -43,19 +52,19 @@ const Modal = ({ show, onClose, imageSrc, imageSrc2, imageAlt, imageAlt2, projec
         setShowContent(true);
       }, 500);
     };
-    
+
     // Créez des objets d'image pour les deux images
     const img1 = new Image();
     const img2 = new Image();
-    
+
     // Définissez les gestionnaires onLoad pour chaque image
     img1.onload = handleAllImagesLoaded;
     img2.onload = handleAllImagesLoaded;
-    
+
     // Définissez les sources des images
     img1.src = imageSrc;
     img2.src = imageSrc2;
-    
+
     // Nettoyage : supprimez les gestionnaires onLoad lorsque le composant est démonté
     return () => {
       img1.onload = null;
@@ -63,13 +72,12 @@ const Modal = ({ show, onClose, imageSrc, imageSrc2, imageAlt, imageAlt2, projec
     };
   }, [imageSrc, imageSrc2]); // Déclenchez l'effet lorsque les sources des images changent
 
-
   if (!show) return null;
 
   const logoMapping = {
     REACT: reactLogo,
     HTML: htmlLogo,
-    CSS: cssLogo, 
+    CSS: cssLogo,
     JAVASCRIPT: jsLogo,
     EXPRESS: exLogo,
     MONGODB: mongodbLogo,
@@ -77,9 +85,8 @@ const Modal = ({ show, onClose, imageSrc, imageSrc2, imageAlt, imageAlt2, projec
     JSONWEBTOKEN: jwtLogo,
     NODEJS: logoNode,
     API_TMDB: tmdbLogo,
-    SQL: sqlLogo
+    SQL: sqlLogo,
   };
-
 
   return (
     <div className="modal-overlay" onClick={handleCloseModal}>
@@ -92,63 +99,81 @@ const Modal = ({ show, onClose, imageSrc, imageSrc2, imageAlt, imageAlt2, projec
             }}
           />
         </div>
-        { imagesLoaded ? (
+        {imagesLoaded ? (
           <>
-          {showContent ? ( // Vérifier s'il est temps d'afficher le contenu
+            {showContent ? ( // Vérifier s'il est temps d'afficher le contenu
               <>
-        <div className="modal-div one">
-          <img src={imageSrc} alt={imageAlt} className="modal-img 1" />
-          
-          <img src={imageSrc2} alt={imageAlt2} className="modal-img 2" />
-          
-        </div>
-        <div className="modal-div two">
-          <h2>{projectData.title}</h2>
-          <h3>Mission :</h3>
-          <p>{projectData.mission}</p>
-          <h3>Technologies utilisées :</h3>
-          <ul>
-            {projectData.technologies.map((tech, index) => (
-              <li key={index}>{logoMapping[tech.toUpperCase()] ? (
-                <img src={logoMapping[tech.toUpperCase()]} alt={tech} title={tech}/> // Afficher l'icône si disponible
+                <div className="modal-div one">
+                  <img src={imageSrc} alt={imageAlt} className="modal-img 1" />
+
+                  <img
+                    src={imageSrc2}
+                    alt={imageAlt2}
+                    className="modal-img 2"
+                  />
+                </div>
+                <div className="modal-div two">
+                  <h2>
+                    {projectData.title}{" "}
+                    <a
+                      href={projectData.github}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                  </h2>
+                  <h3>Mission :</h3>
+                  <p>{projectData.mission}</p>
+                  <h3>Technologies utilisées :</h3>
+                  <ul>
+                    {projectData.technologies.map((tech, index) => (
+                      <li key={index}>
+                        {logoMapping[tech.toUpperCase()] ? (
+                          <img
+                            src={logoMapping[tech.toUpperCase()]}
+                            alt={tech}
+                            title={tech}
+                          /> // Afficher l'icône si disponible
+                        ) : (
+                          tech // Afficher le nom de la technologie s'il n'y a pas d'icône correspondant
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </>
+            ) : (
+              // Afficher le loader pendant au moins 500 ms
+              <div className="loader-container">
+                <Blocks
+                  visible={true}
+                  height="80"
+                  width="80"
+                  ariaLabel="blocks-loading"
+                  wrapperStyle={{}}
+                  wrapperClass="blocks-wrapper"
+                />
+              </div>
+            )}
+          </>
         ) : (
-          tech // Afficher le nom de la technologie s'il n'y a pas d'icône correspondant
-        )}</li>
-            ))}
-          </ul>
-        </div>
-        </>
-        ) : (
-          // Afficher le loader pendant au moins 500 ms
+          // Afficher le loader pendant le chargement des images
           <div className="loader-container">
-          <Blocks
-            visible={true}
-            height="80"
-            width="80"
-            ariaLabel="blocks-loading"
-            wrapperStyle={{}}
-            wrapperClass="blocks-wrapper"
-          />
+            <Blocks
+              visible={true}
+              color="#FF00FF"
+              height="80"
+              width="80"
+              ariaLabel="blocks-loading"
+              wrapperStyle={{ "background-color": "#FF00FF" }}
+              wrapperClass="blocks-wrapper"
+            />
           </div>
         )}
-      </>
-    ) : (
-      // Afficher le loader pendant le chargement des images
-      <div className="loader-container">
-      <Blocks
-        visible={true}
-        color="#FF00FF"
-        height="80"
-        width="80"
-        ariaLabel="blocks-loading"
-        wrapperStyle={{"background-color": "#FF00FF"}}
-        wrapperClass="blocks-wrapper"
-      />
       </div>
-    )}
-  </div>
-</div>
-);
+    </div>
+  );
 };
 
 export default Modal;

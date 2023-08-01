@@ -8,7 +8,8 @@
 			"CSS",
 			"SQL",
 			"API_TMDB"
-		]
+		],
+		"github": "https://github.com/Msgau/site_cine"
 	},
     {
 		"id": "2",
@@ -17,7 +18,8 @@
         "technologies": [
 			"REACT",
 			"CSS"
-		]
+		],
+		"github": "https://github.com/Msgau/kasa"
 	},
     {
 		"id": "3",
@@ -28,7 +30,8 @@
 			"Express",
 			"MongoDB",
 			"JsonWebToken"
-		]
+		],
+		"github": "https://github.com/Msgau/Projet-7-openclassrooms-Mon-vieux-grimoire"
 	},
     {
 		"id": "4",
@@ -39,6 +42,7 @@
 			"CSS",
 			"JavaScript",
 			"Lighthouse"
-		]
+		],
+		"github": "https://github.com/Msgau/Projet-5-openclassrooms"
 	}
 ]
