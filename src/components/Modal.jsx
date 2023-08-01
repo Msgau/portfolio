@@ -1,5 +1,5 @@
 import "../styles/Modal.scss";
-import { Blocks } from "react-loader-spinner";
+import { Grid } from "react-loader-spinner";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
@@ -50,7 +50,7 @@ const Modal = ({
       setImagesLoaded(true);
       setTimeout(() => {
         setShowContent(true);
-      }, 500);
+      }, 1000);
     };
 
     // Créez des objets d'image pour les deux images
@@ -144,15 +144,17 @@ const Modal = ({
                 </div>
               </>
             ) : (
-              // Afficher le loader pendant au moins 500 ms
+              // Afficher le loader pendant au moins 1000 ms
               <div className="loader-container">
-                <Blocks
-                  visible={true}
+                <Grid
                   height="80"
                   width="80"
-                  ariaLabel="blocks-loading"
+                  color="#FF00FF"
+                  ariaLabel="grid-loading"
+                  radius="12.5"
                   wrapperStyle={{}}
-                  wrapperClass="blocks-wrapper"
+                  wrapperClass=""
+                  visible={true}
                 />
               </div>
             )}
@@ -160,7 +162,7 @@ const Modal = ({
         ) : (
           // Afficher le loader pendant le chargement des images
           <div className="loader-container">
-            <Blocks
+            <Grid
               visible={true}
               color="#FF00FF"
               height="80"
