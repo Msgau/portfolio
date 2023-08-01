@@ -96,20 +96,14 @@
 
 @media all and (max-width: 1000px) {
     .block {
-        width: 49%;
+        width: 45%;
+        height: 35vh;
     }
 }
 
-@media all and (max-width: 950px) {
-    .block {
-        width: 49%;
-        height: 29vh;
-    }
-}
 @media all and (max-width: 750px) {
     .block {
         width: 65%;
-        height: 25vh;
     }
 }
 @media all and (max-width: 430px) {

@@ -14,7 +14,7 @@
     {
 		"id": "2",
 		"title": "Frontend du site KASA",
-		"mission": "Créer l'interace visuelle d'un site de réservation de logements chez l'habitant",
+		"mission": "Créer l'interace visuelle d'un site de réservation de logements chez l'habitant avec React. C'est avec ce projet que je me suis formé aux bases du framework React. J'ai utilisé des composants pour générer la page d'accueil qui présente la liste des logements, puis pour créer une page présentant la fiche d'un logement.",
         "technologies": [
 			"REACT",
 			"CSS"
@@ -24,7 +24,7 @@
     {
 		"id": "3",
 		"title": "Backend du site Mon Vieux Grimoire",
-		"mission": "Construire le backend du site Mon Vieux Grimoire, un site de notation de livres",
+		"mission": "Construire le backend du site Mon Vieux Grimoire, un site de notation de livres. J'ai utilisé express et node.js pour créer la structure du backend du site, en m'appuyant sur la base de données noSQL mongoDB. J'ai pu créer des routes sécurisées pour que les utilisateurs puissent créer un compte, se connecter, ajouter un livre, le noter, le modifier ou le supprimer, et enfin pour afficher les objets créés par ceux-ci.",
         "technologies": [
 			"NodeJs",
 			"Express",
@@ -35,14 +35,15 @@
 	},
     {
 		"id": "4",
-		"title": "Optimisation et référencement du site Nina Carducci",
-		"mission": "Améliorer, le référencement et le performances du site, débugger les outils qui ne fonctionnent pas, supprimer les bibliothèques et les remplacer par du code JavaScript.",
+		"title": "Nina Carducci",
+		"mission": "Je suis parti d'un site déjà conçu par un autre développeur, mais présentant des problèmes : performances, référencement, ainsi que des bugs sur ses fonctionnalités Par exemple, la fonction de tri de la galerie. J'ai entrepris d'améliorer le référencement et les performances du site, débugger les outils qui ne fonctionnent pas, supprimer le code inutile des bibliothèques, ou bien le remplacer par du code JavaScript.",
         "technologies": [
 			"HTML",
 			"CSS",
 			"JavaScript",
 			"Lighthouse"
 		],
-		"github": "https://github.com/Msgau/Projet-5-openclassrooms"
+		"github": "https://github.com/Msgau/Projet-5-openclassrooms",
+		"link": "https://msgau.github.io/Projet-5-openclassrooms/"
 	}
 ]

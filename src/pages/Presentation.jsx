@@ -20,7 +20,7 @@ export default function Presentation() {
   useEffect(() => {
     const loadingTimer = setTimeout(() => {
       setContentLoaded(true);
-    }, 1000);
+    }, 250);
 
     // Clear the timer when the component is unmounted
     return () => clearTimeout(loadingTimer);

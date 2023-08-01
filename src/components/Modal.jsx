@@ -31,8 +31,10 @@ const Modal = ({
   const handleCloseModal = (e) => {
     // Vérifier si l'événement provient de la div .modal-overlay (en dehors de la modale)
     if (
+      e.target.classList.contains("nav-bar") ||
       e.target.classList.contains("modal-overlay") ||
-      e.target.classList.contains("close-btn")
+      e.target.classList.contains("close-btn") 
+      
     ) {
       e.stopPropagation();
       onClose(); // Fermer la modale si l'événement provient de l'extérieur
@@ -104,17 +106,17 @@ const Modal = ({
             {showContent ? ( // Vérifier s'il est temps d'afficher le contenu
               <>
                 <div className="modal-div one">
-                  <img src={imageSrc} alt={imageAlt} className="modal-img 1" />
+                <a href={imageSrc} target="_blank" rel="noopener noreferrer">
+                    <img src={imageSrc} alt={imageAlt} className="modal-img 1" />
+                  </a>
 
-                  <img
-                    src={imageSrc2}
-                    alt={imageAlt2}
-                    className="modal-img 2"
-                  />
+                  <a href={imageSrc2} target="_blank" rel="noopener noreferrer">
+                    <img src={imageSrc2} alt={imageAlt2} className="modal-img 2" />
+                  </a>
                 </div>
                 <div className="modal-div two">
                   <h2>
-                    {projectData.title}{" "}
+                    <a href={projectData.link} style={{color: "black"}} rel="noopener noreferrer" target="_blank">{projectData.title}{" "}</a>
                     <a
                       href={projectData.github}
                       rel="noopener noreferrer"
