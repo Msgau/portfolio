@@ -2,7 +2,7 @@
 	{
 		"id": "1",
 		"title": "Ciné Crew (WOP)",
-		"mission": "Projet personnel initié en parallèlle de ma formation. Il est encore en cours de développement. Mon objectif est de créer entièrement un site de notation de films incluant des fonctions sociales. Actuellement, j'ai intégré un moteur de recherche ainsi qu'un interface d'affichage pour les films. Je suis en train de me former sur le langage SQL pour développer le backend du site, nécessaire à l'intégration des fonctions sociales.",
+		"mission": "Projet personnel initié en parallèlle de ma formation. Il est encore en cours de développement. Mon objectif est de créer entièrement un site de notation de films incluant des fonctions sociales. Actuellement, j'ai intégré un moteur de recherche ainsi qu'une interface d'affichage pour les films. Je suis en train de me former sur le langage SQL pour développer le backend du site, nécessaire à l'intégration des fonctions sociales.",
         "technologies": [
 			"REACT",
 			"CSS",
