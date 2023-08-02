@@ -42,7 +42,8 @@ export default function Presentation() {
           mes connaissances techniques de manière claire et concise.
         </p>
         <p>
-          Mes connaissances avancées en développement front-end (
+          Je me suis formé en suivant la formation développeurs web proposée par Openclassrooms.
+          Les connaissances avancées que j'y ai acquises en développement front-end (
           <strong>JavaScript</strong>, <strong>HTML5</strong> et{" "}
           <strong>CSS3</strong>) et back-end (<strong>Node.js</strong>,{" "}
           <strong>express</strong>, <strong>mongoDB</strong>) me permettent de

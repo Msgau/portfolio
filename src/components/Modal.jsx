@@ -107,20 +107,21 @@ const Modal = ({
               <>
                 <div className="modal-div one">
                 <a href={imageSrc} target="_blank" rel="noopener noreferrer">
-                    <img src={imageSrc} alt={imageAlt} className="modal-img 1" />
+                    <img src={imageSrc} alt={imageAlt} className="modal-img" />
                   </a>
 
                   <a href={imageSrc2} target="_blank" rel="noopener noreferrer">
-                    <img src={imageSrc2} alt={imageAlt2} className="modal-img 2" />
+                    <img src={imageSrc2} alt={imageAlt2} className="modal-img" />
                   </a>
                 </div>
                 <div className="modal-div two">
                   <h2>
-                    <a href={projectData.link} style={{color: "black"}} rel="noopener noreferrer" target="_blank">{projectData.title}{" "}</a>
+                    <a href={projectData.link} style={{color: "black"}} rel="noopener noreferrer" target="_blank" className="link-ws">{projectData.title}{" "}</a>
                     <a
                       href={projectData.github}
                       rel="noopener noreferrer"
                       target="_blank"
+                      className="link-gh"
                     >
                       <FontAwesomeIcon icon={faGithub} />
                     </a>
