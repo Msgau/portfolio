@@ -50,8 +50,9 @@
     h2 {
         font-size: 30px;
 
-        a {
+        .link-gh {
             color: #FF00FF;
+            margin-left: 10px;
         }
     }
     ul {
@@ -131,7 +132,6 @@
                 margin: 30px 0 0 0;
                 width: 100%;
                 a {
-                    
                     width: 90%;
                     display: flex;
                     justify-content: center;

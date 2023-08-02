@@ -116,13 +116,26 @@ const Modal = ({
                 </div>
                 <div className="modal-div two">
                   <h2>
-                    <a href={projectData.link} style={{color: "black"}} rel="noopener noreferrer" target="_blank" className="link-ws">{projectData.title}{" "}</a>
-                    <a
-                      href={projectData.github}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      className="link-gh"
-                    >
+                  {projectData.link ? (
+              <a
+                href={projectData.link}
+                style={{ color: "black" }}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="link-ws"
+                title={`${projectData.title} : aller vers le site`}
+              >
+                {projectData.title}{" "}
+              </a>
+            ) : (
+              projectData.title // Afficher le titre du projet s'il n'y a pas de lien
+            )}
+            <a
+              href={projectData.github}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="link-gh"
+            >
                       <FontAwesomeIcon icon={faGithub} />
                     </a>
                   </h2>
