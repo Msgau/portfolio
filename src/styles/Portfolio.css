@@ -94,10 +94,17 @@
     text-decoration: none;
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
+    #root {
+        height: 100vh;
+    }
     .block {
         width: 45%;
         height: 35vh;
+    }
+    .works {
+        height: calc(100vh - 50px);
+        margin: 0;
     }
 }
 
@@ -115,3 +122,9 @@
         height: 27vh;
     }
 }
+/* Styles pour les appareils en mode paysage ayant une largeur supérieure à 600 pixels */
+@media screen and (orientation: landscape) and (max-width: 915px) {
+    /* Ajoutez ici les styles spécifiques pour les appareils en mode paysage */
+    
+  }
+  
