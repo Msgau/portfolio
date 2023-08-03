@@ -127,8 +127,8 @@
 @media screen and (orientation: landscape) and (max-width: 750px) {
     .block {
         margin: 0 auto;
-        height: 44%;
-        width: 48%;
+        height: 42%;
+        width: 45%;
     }
     
   }
