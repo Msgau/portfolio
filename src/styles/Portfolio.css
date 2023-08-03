@@ -104,7 +104,7 @@
     }
     .works {
         height: calc(100vh - 50px);
-        margin: 0;
+        margin: 0 0 50px 0;
     }
 }
 
@@ -123,8 +123,8 @@
         height: 23%;
     }
 }
-/* Styles pour les appareils en mode paysage ayant une largeur supérieure à 600 pixels */
-@media screen and (orientation: landscape) and (max-width: 600px) {
+
+@media screen and (orientation: landscape) and (max-width: 750px) {
     .block {
         margin: 0 auto;
         height: 44%;
