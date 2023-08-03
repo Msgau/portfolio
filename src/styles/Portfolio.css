@@ -118,13 +118,18 @@
         margin-bottom: 55px;
     }
     .block {
-        width: 90%;
-        height: 27vh;
+        width: 85%;
+        margin: auto;
+        height: 23%;
     }
 }
 /* Styles pour les appareils en mode paysage ayant une largeur supérieure à 600 pixels */
-@media screen and (orientation: landscape) and (max-width: 915px) {
-    /* Ajoutez ici les styles spécifiques pour les appareils en mode paysage */
+@media screen and (orientation: landscape) and (max-width: 600px) {
+    .block {
+        margin: 0 auto;
+        height: 44%;
+        width: 48%;
+    }
     
   }
   
