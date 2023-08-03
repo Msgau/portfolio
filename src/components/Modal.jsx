@@ -106,11 +106,11 @@ const Modal = ({
             {showContent ? ( // Vérifier s'il est temps d'afficher le contenu
               <>
                 <div className="modal-div one">
-                <a href={imageSrc} target="_blank" rel="noopener noreferrer">
+                <a href={imageSrc} target="_blank" rel="noopener noreferrer" className="img-link">
                     <img src={imageSrc} alt={imageAlt} className="modal-img" />
                   </a>
 
-                  <a href={imageSrc2} target="_blank" rel="noopener noreferrer">
+                  <a href={imageSrc2} target="_blank" rel="noopener noreferrer" className="img-link">
                     <img src={imageSrc2} alt={imageAlt2} className="modal-img" />
                   </a>
                 </div>
