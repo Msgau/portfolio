@@ -42,9 +42,9 @@ export default function Presentation() {
           mes connaissances techniques de manière claire et concise.
         </p>
         <p>
-          Je me suis formé en suivant la formation développeurs web proposée par Openclassrooms.
+          Je me suis formé en suivant la formation développeurs web proposée par <a href="https://openclassrooms.com/fr/paths/717-developpeur-web" rel="noopener noreferrer" target="_blank">Openclassrooms</a>.
           Les connaissances avancées que j'y ai acquises en développement front-end (
-          <strong>JavaScript</strong>, <strong>HTML5</strong> et{" "}
+          <strong>JavaScript</strong>, <strong>HTML5</strong>, <strong>React</strong>,{" "}
           <strong>CSS3</strong>) et back-end (<strong>Node.js</strong>,{" "}
           <strong>express</strong>, <strong>mongoDB</strong>) me permettent de
           créer des expériences web innovantes et fluides.{" "}

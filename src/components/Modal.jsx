@@ -29,7 +29,7 @@ const Modal = ({
   const [showContent, setShowContent] = useState(false);
 
   const handleCloseModal = (e) => {
-    // Vérifier si l'événement provient de la div .modal-overlay (en dehors de la modale)
+    // Vérifie si l'événement provient de la div .modal-overlay (en dehors de la modale)
     if (
       e.target.classList.contains("nav-bar") ||
       e.target.classList.contains("modal-overlay") ||
@@ -37,12 +37,12 @@ const Modal = ({
       
     ) {
       e.stopPropagation();
-      onClose(); // Fermer la modale si l'événement provient de l'extérieur
+      onClose(); // Ferme la modale si l'événement provient de l'extérieur
     }
   };
 
   useEffect(() => {
-    // Réinitialiser l'état showContent chaque fois que la propriété show change
+    // Réinitialise l'état showContent chaque fois que la propriété show change
     setShowContent(false);
   }, [show]);
 
@@ -55,19 +55,19 @@ const Modal = ({
       }, 1000);
     };
 
-    // Créez des objets d'image pour les deux images
+    // Crée des objets d'image pour les deux images
     const img1 = new Image();
     const img2 = new Image();
 
-    // Définissez les gestionnaires onLoad pour chaque image
+    // Définit les gestionnaires onLoad pour chaque image
     img1.onload = handleAllImagesLoaded;
     img2.onload = handleAllImagesLoaded;
 
-    // Définissez les sources des images
+    // Définit les sources des images
     img1.src = imageSrc;
     img2.src = imageSrc2;
 
-    // Nettoyage : supprimez les gestionnaires onLoad lorsque le composant est démonté
+    // Nettoyage : supprime les gestionnaires onLoad lorsque le composant est démonté
     return () => {
       img1.onload = null;
       img2.onload = null;
@@ -160,7 +160,7 @@ const Modal = ({
                 </div>
               </>
             ) : (
-              // Afficher le loader pendant au moins 1000 ms
+
               <div className="loader-container">
                 <Grid
                   height="80"
