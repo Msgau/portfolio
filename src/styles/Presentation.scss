@@ -7,25 +7,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 48%;
     height: 90%;
     margin: auto 10px;
 }
 .presentationContainer {
-    justify-content: space-between;
-}
-
-.presentationContainer strong, .presentationContainer h2, .presentationContainer a {
+    width: 45%;
+    text-align: justify;
+    a {
+      text-decoration: underline;
+    }
+    a:hover {
+      color: white;
+      text-decoration: none;
+  }
+  strong, h2, a {
     color: #FF00FF;
     font-weight: 400;
+  }
+  p {
+    margin: 15px;
+  }
 }
-
-.presentationContainer a {
-    text-decoration: underline;
-}
-.presentationContainer a:hover {
-    color: white;
-    text-decoration: none;
+.stage-cube-cont {
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: (10%);
+  overflow: hidden;
 }
 
 @media all and (max-width: 430px) {
@@ -33,15 +42,6 @@
         display: block;
     }
 }
-
-.stage-cube-cont {
-    width: 48%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    bottom: (10%);
-    overflow: hidden;
-  }
   
   .cubespinner {
     animation-name: spincube;
