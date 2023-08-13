@@ -50,7 +50,7 @@ export default function Presentation() {
           créer des expériences web innovantes et fluides.{" "}
         </p>
         <p>
-          Vous pouvez retrouver davantage d'informations sur ma page{" "}
+          Vous pouvez retrouver davantage d'informations sur <a href="../assets/cv_gau_sebastien_dev_web.pdf" target="_blank" rel="noopener noreferrer">mon CV</a>, ou sur ma page{" "}
           <a
             href="https://www.linkedin.com/in/s%C3%A9bastien-gau-3266b768/"
             rel="noopener noreferrer"
