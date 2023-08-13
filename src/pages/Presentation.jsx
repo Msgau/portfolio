@@ -13,23 +13,23 @@ import {
 import "../styles/Presentation.scss";
 
 export default function Presentation() {
-  // State to track whether the content is loaded or not
+  // On définit l'état de contendLoaded à false
   const [contentLoaded, setContentLoaded] = useState(false);
 
-  // useEffect to simulate a 1-second loading delay
+  // ON ajoute un délai de 250 ms
   useEffect(() => {
     const loadingTimer = setTimeout(() => {
       setContentLoaded(true);
     }, 250);
 
-    // Clear the timer when the component is unmounted
+    // Arrêter le timer quand la page est fermée
     return () => clearTimeout(loadingTimer);
   }, []);
 
   return (
     <div className="presentationPage">
         <div className="backgroundImage"></div>
-      {contentLoaded ? ( // Render the content only when it's loaded
+      {contentLoaded ? ( // Afficher le contenu uniquement quand il est chargé
         <>
       <Menu />
       <div className="presentationContainer">
