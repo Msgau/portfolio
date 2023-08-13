@@ -3,6 +3,7 @@ import Menu from "../components/Menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { Grid } from "react-loader-spinner";
+import CV from "../assets/cv_gau_sebastien_dev_web.pdf";
 import {
   faCss3,
   faNodeJs,
@@ -50,7 +51,7 @@ export default function Presentation() {
           créer des expériences web innovantes et fluides.{" "}
         </p>
         <p>
-          Vous pouvez retrouver davantage d'informations sur <a href="../assets/cv_gau_sebastien_dev_web.pdf" target="_blank" rel="noopener noreferrer">mon CV</a>, ou sur ma page{" "}
+          Vous pouvez retrouver davantage d'informations sur <a href={CV} target="_blank" rel="noopener noreferrer">mon CV</a>, ou sur ma page{" "}
           <a
             href="https://www.linkedin.com/in/s%C3%A9bastien-gau-3266b768/"
             rel="noopener noreferrer"
