@@ -100,7 +100,7 @@ export default function Menu() {
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/s%C3%A9bastien-gau-3266b768/"
+            href="https://www.linkedin.com/in/sebastien-gau/"
             rel="noopener noreferrer"
             target="_blank"
             className="external__link"

@@ -53,7 +53,7 @@ export default function Presentation() {
         <p>
           Vous pouvez retrouver davantage d'informations sur <a href={CV} target="_blank" rel="noopener noreferrer">mon CV</a>, ou sur ma page{" "}
           <a
-            href="https://www.linkedin.com/in/s%C3%A9bastien-gau-3266b768/"
+            href="https://www.linkedin.com/in/sebastien-gau/"
             rel="noopener noreferrer"
             target="_blank"
           >

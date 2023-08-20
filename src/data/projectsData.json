@@ -2,7 +2,7 @@
 	{
 		"id": "1",
 		"title": "Ciné Crew (WOP)",
-		"mission": "Projet personnel initié en parallèlle de ma formation. Il est encore en cours de développement. Mon objectif est de créer entièrement un site de notation de films incluant des fonctions sociales. Actuellement, j'ai intégré un moteur de recherche ainsi qu'une interface d'affichage pour les films. Je suis en train de me former sur le langage SQL pour développer le backend du site, nécessaire à l'intégration des fonctions sociales.",
+		"mission": "Projet personnel initié en parallèle de ma formation. Il est encore en cours de développement. Mon objectif est de créer entièrement un site de notation de films incluant des fonctions sociales. Actuellement, j'ai intégré un moteur de recherche ainsi qu'une interface d'affichage pour les films. Je suis en train de me former sur le langage SQL pour développer le back-end du site, nécessaire à l'intégration des fonctions sociales.",
         "technologies": [
 			"REACT",
 			"CSS",
@@ -23,8 +23,8 @@
 	},
     {
 		"id": "3",
-		"title": "Mon Vieux Grimoire (backend)",
-		"mission": "Construire le backend du site Mon Vieux Grimoire, un site de notation de livres. J'ai utilisé express et node.js pour créer la structure du backend du site, en m'appuyant sur la base de données noSQL mongoDB. J'ai pu créer des routes sécurisées pour que les utilisateurs puissent créer un compte, se connecter, ajouter un livre, le noter, le modifier ou le supprimer, et enfin pour afficher les objets créés par ceux-ci. Réalisé dans le cadre de ma formation.",
+		"title": "Mon Vieux Grimoire (back-end)",
+		"mission": "Construire le back-end du site Mon Vieux Grimoire, un site de notation de livres. J'ai utilisé express et node.js pour créer la structure du back-end du site, en m'appuyant sur la base de données noSQL mongoDB. J'ai pu créer des routes sécurisées pour que les utilisateurs puissent créer un compte, se connecter, ajouter un livre, le noter, le modifier ou le supprimer, et enfin pour afficher les objets créés par ceux-ci. Réalisé dans le cadre de ma formation.",
         "technologies": [
 			"NodeJs",
 			"Express",
