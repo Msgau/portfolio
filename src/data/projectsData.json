@@ -14,7 +14,7 @@
     {
 		"id": "2",
 		"title": "Frontend du site KASA",
-		"mission": "Créer l'interace visuelle d'un site de réservation de logements chez l'habitant avec React. C'est avec ce projet que je me suis formé aux bases du framework React. J'ai utilisé des composants pour générer la page d'accueil qui présente la liste des logements, puis pour créer une page présentant la fiche d'un logement. Réalisé dans le cadre de ma formation.",
+		"mission": "Créer l'interface visuelle d'un site de réservation de logements chez l'habitant avec React. C'est avec ce projet que je me suis formé aux bases du framework React. J'ai utilisé des composants pour générer la page d'accueil qui présente la liste des logements, puis pour créer une page présentant la fiche d'un logement. Réalisé dans le cadre de ma formation.",
         "technologies": [
 			"REACT",
 			"CSS"
