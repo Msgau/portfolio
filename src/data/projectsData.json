@@ -36,7 +36,7 @@
     {
 		"id": "4",
 		"title": "Nina Carducci (optimisation, débug)",
-		"mission": "Je suis parti d'un site déjà conçu par un autre développeur, mais présentant des problèmes : performances, référencement, ainsi que des bugs sur ses fonctionnalités Par exemple, la fonction de tri de la galerie. J'ai entrepris d'améliorer le référencement et les performances du site, débugger les outils qui ne fonctionnent pas, supprimer le code inutile des bibliothèques, ou bien le remplacer par du code JavaScript. Réalisé dans le cadre de ma formation.",
+		"mission": "Je suis parti d'un site déjà conçu par un autre développeur, mais présentant des problèmes : performances, référencement, ainsi que des bugs sur ses fonctionnalités. Par exemple, la fonction de tri de la galerie. J'ai entrepris d'améliorer le référencement et les performances du site, de débugger les outils qui ne fonctionnent pas, de supprimer le code inutile des bibliothèques, ou bien de le remplacer par du code JavaScript. Réalisé dans le cadre de ma formation.",
         "technologies": [
 			"HTML",
 			"CSS",
