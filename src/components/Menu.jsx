@@ -30,7 +30,7 @@ export default function Menu() {
             icon={faHome}
             style={{
               color:
-                location.pathname === "/portfolio/" ? "#FF00FF" : "#4d4d4e",
+              location.pathname === "/portfolio" || location.pathname === "/portfolio/" ? "#FF00FF" : "#4d4d4e",
             }}
           />
         </NavLink>

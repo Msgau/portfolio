@@ -4,7 +4,6 @@ import Error404 from './Error404';
 import Presentation from './Presentation';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
-import '../styles/Routes.css';
 
 function RouteConfiguration() {
 
@@ -14,7 +13,7 @@ function RouteConfiguration() {
       
         <Router>
           <Routes>
-            <Route path="/portfolio/" element={<Home />} />
+            <Route path="/portfolio" element={<Home />} />
             <Route path="/portfolio/home" element={<Home />} />
             <Route path='/portfolio/presentation' element={< Presentation/>} />
             <Route path="/*" element={<Error404 />} />
@@ -24,7 +23,6 @@ function RouteConfiguration() {
         </Router>
   
       </div>
-      {/* <Footer /> */}
     </div>
     );
 }
