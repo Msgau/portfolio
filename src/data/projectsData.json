@@ -9,7 +9,8 @@
 			"SQL",
 			"API_TMDB"
 		],
-		"github": "https://github.com/Msgau/site_cine"
+		"github": "https://github.com/Msgau/site_cine",
+		"link": "https://msgau.github.io/site_cine/"
 	},
     {
 		"id": "2",
@@ -19,7 +20,7 @@
 			"REACT",
 			"CSS"
 		],
-		"github": "https://github.com/Msgau/kasa"
+		"github": "https://github.com/Msgau/kasa-react"
 	},
     {
 		"id": "3",
@@ -31,7 +32,7 @@
 			"MongoDB",
 			"JsonWebToken"
 		],
-		"github": "https://github.com/Msgau/Projet-7-openclassrooms-Mon-vieux-grimoire"
+		"github": "https://github.com/Msgau/Mon-vieux-Grimoire-V2-backend"
 	},
     {
 		"id": "4",
@@ -43,7 +44,7 @@
 			"JavaScript",
 			"Lighthouse"
 		],
-		"github": "https://github.com/Msgau/Projet-5-openclassrooms",
-		"link": "https://msgau.github.io/Projet-5-openclassrooms/"
+		"github": "https://github.com/Msgau/nina_carducci-optimisation",
+		"link": "https://msgau.github.io/nina_carducci-optimisation/"
 	}
 ]
