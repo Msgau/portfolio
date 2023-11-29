@@ -32,6 +32,7 @@ export default function ContactForm() {
         setMessage("");
       });
     };
+    
 
   return (
     <div className="contactPage">
