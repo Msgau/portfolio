@@ -2,20 +2,77 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404 - Mauvaise adresse</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 - Mauvaise adresse</title>
+    <style>
+        body {
+            color: white;
+        }
+
+        .backgroundImage {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: url('./homeBackground.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            filter: brightness(0.3);
+            z-index: -1;
+        }
+
+        .page404 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .error404 {
+            width: 85%;
+            margin: 50px auto auto 100px;
+        }
+
+        .number404 {
+            font-size: 200px;
+        }
+
+        p,
+        a {
+            font-size: 30px;
+            color: white;
+            /* text-decoration: none; */
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Oups ! Il semble que la page que vous recherchez n'existe plus.</h1>
-    <p>Si vous avez ouvert un lien vers mon CV, il se peut que celui-ci ait été mis à jour récemment. Pour voir sa dernière version, vous pouvez suivre <a href="https://msgau.github.io/portfolio/assets/cv_gau_sebastien_dev_web-964bc2c1.pdf">ce lien</a>.</p>
+    <div class="page404">
+
+        <div class="backgroundImage"></div>
+        <div class="error404">
+            <div class="number404">404</div>
+            <h1>Oups ! Il semble que la page que vous recherchez n'existe plus.</h1>
+            <div>
+                <p>Si vous avez ouvert un lien vers mon CV, il se peut que celui-ci ait été mis à jour récemment.</p>
+                <p>Pour voir sa dernière version, vous pouvez suivre <a
+                        href="https://msgau.github.io/portfolio/assets/cv_gau_sebastien_dev_web-964bc2c1.pdf">ce
+                        lien</a>.</p>
+                        <p>Pour revenir au portfolio, <a
+                            href="https://msgau.github.io/portfolio/#/portfolio/">c'est par ici !</a>.</p>
+            </div>
+        </div>
+
+    </div>
+
+
 </body>
+
 </html>
